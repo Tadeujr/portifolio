@@ -1,0 +1,72 @@
+/* Reset de estilos básicos */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1B1B1B;
+  
+  
+}
+
+/* Estilos para o cabeçalho */
+header {
+  background-color: #ABDAE1;
+  color: #1B1B1B;
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* Estilos para o contêiner principal */
+.container {
+  background-color: #EBF5EE;
+  color: #1e1d19;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em;
+  
+}
+
+.profile-img {
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+}
+
+.current-study {
+  margin-left: 20px;
+}
+/* Estilos para a foto de perfil */
+.profile-img {
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+/* Estilos para a seção de projetos */
+.project {
+  margin-top: 20px;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.thumb {
+  max-width: 200px; /* Ajuste o tamanho das miniaturas conforme necessário */
+  cursor: pointer;
+}
+
+/* Classe para os ícones do LinkedIn e GitHub */
+.icon {
+  width: auto;
+  height: 50px; /* Ajuste o tamanho dos ícones conforme necessário */
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
