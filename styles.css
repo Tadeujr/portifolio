@@ -4,8 +4,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #1B1B1B;
-  
-  
 }
 
 /* Estilos para o cabeçalho */
@@ -23,26 +21,30 @@ header {
   max-width: 800px;
   margin: 0 auto;
   padding: 2em;
-  
 }
 
-.profile-img {
-  max-width: 200px;
-  border-radius: 50%;
+.separator {
+  border-top: 2px solid #ABDAE1;
+  margin: 20px 0;
 }
-
+/* Estilos para a seção "Sobre Mim" */
 .about-me {
   display: flex;
   align-items: center;
 }
 
-.current-study {
-  margin-left: 20px;
-}
-/* Estilos para a foto de perfil */
 .profile-img {
   max-width: 200px;
   border-radius: 50%;
+}
+
+.current-study {
+  margin-left: 20px;
+}
+
+/* Estilos para as seções de conteúdo */
+.section-content {
+  margin-top: 20px;
 }
 
 /* Estilos para a seção de projetos */
@@ -54,11 +56,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* Adicione essa propriedade para que as miniaturas fiquem em várias linhas no celular */
 }
 
 .thumb {
   max-width: 200px; /* Ajuste o tamanho das miniaturas conforme necessário */
   cursor: pointer;
+  margin-bottom: 10px; /* Adicione margem inferior para espaçamento entre as miniaturas */
 }
 
 /* Classe para os ícones do LinkedIn e GitHub */
@@ -67,6 +71,55 @@ header {
   height: 50px; /* Ajuste o tamanho dos ícones conforme necessário */
   cursor: pointer;
 }
+
+/* Estilos para os parágrafos */
+p {
+  margin: 0; /* Remova a margem padrão dos parágrafos */
+}
+
+/* Estilos para os links */
 a {
   text-decoration: none;
+  color: #0077b5; /* Cor do LinkedIn */
+  border-bottom: none; /* Remova a linha de sublinhado dos links */
+}
+
+a:hover {
+  color: #0077b5;
+}
+
+/* Estilos para os títulos das seções */
+h2 {
+  margin-top: 20px;
+}
+
+/* Estilos para as listas de tecnologias */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li::before {
+  content: "•";
+  margin-right: 8px;
+}
+
+/* Estilos para os ícones de estudo */
+.study-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.study-icons img {
+  width: 30px; /* Ajuste o tamanho dos ícones de estudo conforme necessário */
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Media query para telas menores, como celulares */
+@media (max-width: 768px) {
+  .thumbnails {
+    justify-content: center; /* Centralize as miniaturas no celular */
+  }
 }
